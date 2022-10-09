@@ -1,0 +1,315 @@
+/*---------------LAYOUT-----------------*/
+.full-height {
+  min-height: 100vh;
+}
+
+/*---------------Astronaut--------------*/
+.astronaut {
+  background-image: url("/style/images/astro.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.astronaut .boxen {
+  border: 4px solid black;
+  position: absolute;
+  font-family: "Rubik", sans-serif;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.75);
+  top: 80px;
+  left: 40px;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.astronaut .boxen .text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/*--------------- DESKTOP --------------*/
+@media screen and (min-width: 800px) {
+  .astronaut .boxen {
+    width: 15rem;
+  }
+  .astronaut .boxen .link {
+    text-align: right;
+  }
+  .astronaut .boxen .link span {
+    position: relative;
+    transition: left 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    left: 0;
+  }
+  .astronaut .boxen .link:hover span {
+    left: 10px;
+  }
+}
+/*--------------- Stars ----------------*/
+.text-page {
+  background: rgba(0, 0, 0, 0.7) url("/style/images/cosmos.jpeg");
+  background-size: cover;
+  background-blend-mode: darken;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  min-height: 100vh;
+}
+
+.brown {
+  margin-bottom: -130px;
+}
+
+.space-ventures h2 span:first-of-type {
+  display: block;
+  position: relative;
+  font-family: "rubik";
+  color: white;
+  z-index: 1;
+  left: 40px;
+  font-size: 4rem;
+}
+.space-ventures h2 span:nth-of-type(2) {
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  color: gray;
+  top: -33px;
+  left: 40px;
+  z-index: 0;
+  font-size: 5rem;
+}
+
+.purple {
+  position: relative;
+  color: white;
+  font-family: "rubik";
+  font-weight: lighter;
+  padding: 20px;
+  line-height: 19px;
+  font-size: 14px;
+  bottom: 60px;
+}
+.purple h2 {
+  font-weight: bolder;
+  font-size: 23px;
+  width: 370px;
+}
+
+.yellow {
+  color: white;
+  position: relative;
+  font-family: "Rubik";
+  font-style: italic;
+  font-weight: lighter;
+  bottom: 140px;
+  font-size: 20px;
+  padding-top: 50px;
+  left: 20px;
+}
+
+.gradient-quote {
+  display: none;
+}
+
+.blue {
+  color: white;
+  font-family: "rubik";
+  font-weight: lighter;
+  text-align: left;
+  padding-right: 50px;
+  padding-left: 50px;
+  line-height: 1.4rem;
+  font-size: 12px;
+}
+
+.bowie {
+  display: none;
+}
+
+.cookie {
+  display: none;
+}
+
+.red-tom {
+  text-decoration: underline;
+  color: rgb(206, 36, 84);
+}
+
+.accept {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .text-page {
+    display: flex;
+    gap: 100px;
+  }
+  .grey {
+    width: 50%;
+  }
+  .yellow {
+    font-size: 25px;
+    left: 50px;
+  }
+  .purple {
+    left: 15px;
+  }
+  .gradient-quote {
+    color: #fa08de;
+    background-image: -webkit-linear-gradient(45deg, #280442 0%, #e8ea63 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    font-weight: lighter;
+    text-align: center;
+    font-family: "rubik";
+    font-style: italic;
+    position: relative;
+    opacity: 0.7;
+    padding-left: 20px;
+    padding-right: 180px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    top: 15px;
+  }
+  .bowie {
+    display: block;
+    height: auto;
+    float: right;
+    width: 80px;
+    transform: rotate(2deg);
+    margin-right: 120px;
+  }
+  .cookie {
+    display: block;
+    position: fixed;
+    font-family: "rubik";
+    font-weight: bold;
+    bottom: 0;
+    color: rgb(206, 36, 84);
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    background-color: rgb(3, 3, 49);
+    z-index: 2;
+  }
+  .red-tom {
+    text-decoration: underline;
+    color: rgb(206, 36, 84);
+  }
+  .accept {
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    width: 5rem;
+    z-index: 2;
+    right: 45px;
+    margin-bottom: 0;
+  }
+  .accept-text {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: medium;
+    font-family: "rubik";
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(11, 11, 93);
+  }
+}
+/*--------------------------------------*/
+/*--------------- Button----------------*/
+/*--------------------------------------*/
+button {
+  background: transparent;
+  pointer-events: none;
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+}
+
+button span {
+  display: block;
+  background-color: black;
+  width: 25px;
+  height: 3px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+input {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+}
+
+input:checked + .meny Button span {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked + .meny button span:nth-child(2) {
+  opacity: 0;
+}
+
+input:checked + .meny button span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+input:checked + .meny button span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+nav {
+  position: fixed;
+  visibility: hidden;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input:checked + .meny nav {
+  visibility: visible;
+  background-color: aliceblue;
+  font-family: "rubik", sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+  opacity: 0.6;
+}
+
+ul {
+  justify-content: space-evenly;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4.5px;
+  -webkit-text-decoration-color: rgb(116, 20, 226);
+          text-decoration-color: rgb(116, 20, 226);
+}/*# sourceMappingURL=style.css.map */
